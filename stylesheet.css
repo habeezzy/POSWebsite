@@ -1,11 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Contrail+One|Permanent+Marker');
-
-
 #title {
   width: 400px;
   height: 70px;
   text-align: center;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bolder;
   background-color: gray;
   margin-bottom: 0;
@@ -15,7 +12,6 @@
   align-items: center;
    margin-left: 50%;
   transform: translateX(-50%);
-  font-family: 'Permanent Marker', cursive;
 }
 
 #container {
@@ -40,7 +36,6 @@
   flex-direction: column;
   margin: 10px;
   border-radius: 5px;
-
 }
 
 #cart_container {
@@ -64,7 +59,6 @@
   width: 100px;
   background-color: white;
   border-radius: 5px;
-  font-family: 'Contrail One', cursive; 
 }
 
 #info_popup {
@@ -75,7 +69,6 @@
   top: 190px;
   left: 50%;
   transform: translateX(-50%);
-  font-family: 'Contrail One', cursive;
 }
 
 #info_popup img {
@@ -96,41 +89,4 @@
   height: 40px;
   background-color: yellow;
   margin-top: 20px;
-  font-family: 'Contrail One', cursive;
 }
-
-#1 {
-
-}
-
-#2 {
-
-}
-
-#3{
-
-}
-
-#4{
-
-}
-
-#5{
-
-}
-
-#6{
-
-}
-
-#7{
-
-}
-
-#8{
-  
-}
-#9{}
-#10{}
-#11{}
-#12{}
