@@ -25,7 +25,7 @@ $(document).ready(function() {
   }
   //Creating objects
   const one = new objectCreator("Hat1","Formal","Its real nice.", 50);
-  $("#1").text(one.name + one.category + one.description + one.price);
+  $("#1").text(one.name + one.price);
 
   const two = new objectCreator("Hat2","Formal","Its real nice.", 50);
   $("#2").text(two.name + two.category + two.description + two.price);
@@ -62,11 +62,15 @@ $(document).ready(function() {
 
   var price ;
 
-//  console.log($(".cart_button"));
-  $("div:nth-of-type(4)").on("click", function(){
-    console.log("Hey");
-    // console.log(one.name);
-    // $("#cart_container").append(one.name )
+
+  $(".wrap").on("click", function(){
+var name_price = $(this).children(".item").text();
+var price_only = name_price.slice(-2);
+var name_only = name_price.substring(0, name_price.length - 2);
+$("#cart_container").append(name_only + " " + price_only);
+
+//console.log(name_price.slice(-2));
+//console.log(name_price.substring(0, name_price.length - 2));
   });
 
 
