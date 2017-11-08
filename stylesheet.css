@@ -55,6 +55,14 @@
   padding: 10px;
 }
 
+.cart_button{
+  height: 40px;
+  width: 100px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 5px;
+}
+
 #total {
   width: 340px;
   height: 40px;
