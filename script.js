@@ -2,6 +2,7 @@ $(document).ready(function() {
   //--------------------------------
   $("#home_icon").hide();
   $("#cart_container").hide();
+  $("#info_popup").hide();
 
   $("#cart_icon").on("click", function(){
     $("#cart_icon").hide(500);
@@ -60,21 +61,24 @@ $(document).ready(function() {
   const twelve = new objectCreator("Hat3","Formal","Its real nice.", 50);
   $("#12").text(twelve.name + twelve.price);
 
-  var price ;
+  var price;
 
 
+$(".wrap").on("click", function() {
+  $("#info_popup").show(300);
+});
+
+$("#info_popup img").on("click", function() {
+  $("#info_popup").hide(300);
+});
+/*
   $(".wrap").on("click", function(){
 var name_price = $(this).children(".item").text();
 var price_only = name_price.slice(-2);
 var name_only = name_price.substring(0, name_price.length - 2);
 $("#cart_container").append(name_only + " " + price_only);
-
-//console.log(name_price.slice(-2));
-//console.log(name_price.substring(0, name_price.length - 2));
   });
-
-
-
+*/
 
 
 
