@@ -64,10 +64,37 @@
   height: 100px;
   width: 100px;
   background-color: white;
+  background-size: 111%;
   border-radius: 5px;
   font-family: 'Contrail One', cursive;
   margin-bottom: 40px;
   text-align: center;
+}
+
+#x_div img {
+  position: absolute;
+  top: 0px;
+}
+
+#stuff {
+  height: 200px;
+  width: 200px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+#stuff .item p {
+  position: absolute;
+  margin-top: 200px;
+  height: 200px;
+  width: 200px;
+}
+
+#stuff .item {
+  margin-top: 15px;
+  height: 200px;
+  width: 200px;
+  background-size: cover;
 }
 
 .item p {
@@ -80,7 +107,8 @@
 #info_popup {
   height: 300px;
   width: 300px;
-  background-color: yellow;
+  background-color: #bfbfbf;
+  border-radius: 5px;
   position: absolute;
   top: 190px;
   left: 50%;
