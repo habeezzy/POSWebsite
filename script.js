@@ -26,47 +26,42 @@ $(document).ready(function() {
   }
   //Creating objects
   const one = new objectCreator("Hat1","Formal","Its real nice.", 50);
-  $("#i1").text(one.name + one.price);
+  $("#i1").html("<p>" + one.name + "<br/>" + one.price + "<p>");
 
   const two = new objectCreator("Hat2","Formal","Its real nice.", 50);
-  $("#i2").text(two.name + two.price);
+  $("#i2").html("<p>" + two.name + "<br/>" + two.price + "<p>");
 
   const three = new objectCreator("Hat3","Formal","Its real nice.", 50);
-  $("#i3").text(three.name + three.price);
+  $("#i3").html("<p>" + three.name + "<br/>" + three.price + "<p>");
 
   const four = new objectCreator("Hat3","Formal","Its real nice.", 50);
-  $("#i4").text(four.name + four.price);
+  $("#i4").html("<p>" + four.name + "<br/>" + four.price + "<p>");
 
   const five = new objectCreator("Hat3","Formal","Its real nice.", 50);
-  $("#i5").text(five.name + five.price);
+  $("#i5").html("<p>" + five.name + "<br/>" + five.price + "<p>");
 
   const six = new objectCreator("Hat3","Formal","Its real nice.", 50);
-  $("#i6").text(six.name + six.price);
+  $("#i6").html("<p>" + six.name + "<br/>" + six.price + "<p>");
 
   const seven = new objectCreator("Hat3","Formal","Its real nice.", 50);
-  $("#i7").text(seven.name + seven.price);
+  $("#i7").html("<p>" + seven.name + "<br/>" + seven.price + "<p>");
 
   const eight = new objectCreator("Hat3","Formal","Its real nice.", 50);
-  $("#i8").text(eight.name + eight.price);
+  $("#i8").html("<p>" + eight.name + "<br/>" + eight.price + "<p>");
 
   const nine = new objectCreator("Hat3","Formal","Its real nice.", 50);
-  $("#i9").text(nine.name + nine.price);
+  $("#i9").html("<p>" + nine.name + "<br/>" + nine.price + "<p>");
 
   const ten = new objectCreator("Hat3","Formal","Its real nice.", 50);
-  $("#i10").text(ten.name + ten.price);
+  $("#i10").html("<p>" + ten.name + "<br/>" + ten.price + "<p>");
 
   const eleven = new objectCreator("Hat3","Formal","Its real nice.", 50);
-  $("#i11").text(eleven.name + eleven.price);
+  $("#i11").html("<p>" + eleven.name + "<br/>" + eleven.price + "<p>");
 
   const twelve = new objectCreator("Hat3","Formal","Its real nice.", 50);
-  $("#i12").text(twelve.name + twelve.price);
+  $("#i12").html("<p>" + twelve.name + "<br/>" + twelve.price + "<p>");
 
   var price;
-  var itemText = $("#i1").text();
-
-  console.log(itemText);
-  itemText.css("color", "red");
-
 
 $(".wrap").on("click", function() {
   $("#info_popup").show(300);

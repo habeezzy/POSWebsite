@@ -66,6 +66,15 @@
   background-color: white;
   border-radius: 5px;
   font-family: 'Contrail One', cursive;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.item p {
+  color: #4ae4e4;
+  margin-top: 103px;
+
+
 }
 
 #info_popup {
