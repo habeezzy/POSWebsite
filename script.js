@@ -62,6 +62,10 @@ $(document).ready(function() {
   $("#i12").text(twelve.name + twelve.price);
 
   var price;
+  var itemText = $("#i1").text();
+
+  console.log(itemText);
+  itemText.css("color", "red");
 
 
 $(".wrap").on("click", function() {
