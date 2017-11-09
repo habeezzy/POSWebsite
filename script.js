@@ -62,11 +62,14 @@ $(document).ready(function() {
   $("#i12").html("<p>" + twelve.name + "<br/>" + twelve.price + "<p>");
 
   var price;
-  var popupDisplay = $(this).children(".item");
 
 $(".wrap").on("click", function() {
   $("#info_popup").show(300);
-  $("#info_popup").html( popupDisplay + ("<img src = 'Images/closeicon.png'/>"));
+  var popupDisplay = $(this).children(".item");
+//  console.log(popupDisplay);
+//$("#info_popup").html(popupDisplay);
+$("#stuff").html(popupDisplay.clone());
+$("#x_div").html("<img src = 'Images/closeicon.png'/>");
 });
 
 $("#info_popup img").on("click", function() {
