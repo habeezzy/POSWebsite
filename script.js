@@ -84,7 +84,24 @@ $("#x_div").on("click", function() {
     $("#stuff p").not(trial);
     var cartinfo = $("#stuff p").text();
     $("#cart_container").append(cartinfo);
+
+
+
+
+
+    $(this).addClass("is-active");
+    $(this).text("Work");
+
+    setTimeout(function(){
+      console.log('working');
+      $(".popup-button").text("Add to Cart");
+      $(".popup-button").removeClass("is-active");
+
+    }, 1000);
+    //$("#info_popup button").css({transition:'background-color 1s ease-in-out',"background-color": "orange"});
   });
+
+
 
 
 
