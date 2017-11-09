@@ -62,14 +62,19 @@ $(document).ready(function() {
   $("#i12").html("<p>" + twelve.name + "<br/>" + twelve.price + "<p>");
 
   var price;
+  var popupDisplay = $(this).children(".item");
 
 $(".wrap").on("click", function() {
   $("#info_popup").show(300);
+  $("#info_popup").html( popupDisplay + ("<img src = 'Images/closeicon.png'/>"));
 });
 
 $("#info_popup img").on("click", function() {
   $("#info_popup").hide(300);
 });
+
+
+
 /*
   $(".wrap").on("click", function(){
 var name_price = $(this).children(".item").text();
