@@ -156,6 +156,22 @@
   visibility: visible;
 }
 
+#info_popup button{
+  position:absolute;
+  bottom: 20px;
+  background-color: #4ae4e4;
+  border:none;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Contrail One', cursive;
+  -webkit-box-shadow: 0px 0px 12px -1px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 0px 12px -1px rgba(0,0,0,1);
+  box-shadow: 0px 0px 12px -1px rgba(0,0,0,1);
+  width:200px;
+  padding:5px 0;
+  font-size:16px
+}
+
 #total {
   width: 340px;
   height: 40px;
