@@ -355,3 +355,9 @@ box-shadow: -7px 26px 33px -31px rgba(0,0,0,0.54);
   font-size:18px;
   color:#165d5d;
 }
+
+#receipt_button{
+  display:none;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}

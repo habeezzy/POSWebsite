@@ -39,7 +39,7 @@ $(document).ready(function() {
    const four = new objectCreator("Squid Hat","Casual","Great for the winter.", 60);
    $("#i4").html("<p>" + four.name + "<br/>" +  "$" + four.price   + "<h4>" + four.category + "<br>" + four.description + "</h4></p>");
 
-   const five = new objectCreator("Pot Hat","Formal","Perfect for dinner parties.", 100);
+   const five = new objectCreator("Pot Hat","Formal","Perfect for dinner parties.", 30);
    $("#i5").html("<p>" + five.name + "<br/>" +  "$" + five.price   + "<h4>" + five.category + "<br>" + five.description + "</h4></p>");
 
    const six = new objectCreator("Drumstick Hat","Casual","Winner winner chicken dinner.", 60);
@@ -54,7 +54,7 @@ $(document).ready(function() {
    const nine = new objectCreator("Cinnabon Hat","Formal","So classy. So chic. So YOU.", 90);
    $("#i9").html("<p>" + nine.name + "<br/>" +  "$" + nine.price   + "<h4>" + nine.category + "<br>" + nine.description + "</h4></p>");
 
-   const ten = new objectCreator("No Shave November Hat","Casual","No shaving necessary.", 100);
+   const ten = new objectCreator("No Shave November Hat","Casual","No shaving necessary.", 90);
    $("#i10").html("<p>" + ten.name + "<br/>" +  "$" + ten.price   + "<h4>" + ten.category + "<br>" + ten.description + "</h4></p>");
 
    const eleven = new objectCreator("Taco Hat","Formal","Who doesn't love tacos?", 80);
@@ -86,10 +86,10 @@ $(document).ready(function() {
     $("#cart_container").append("<div>" + (cartinfo[0] + "\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0" + "$" + cartinfo[1] + ".00" + "</div>"));
     cartinfo[1].toString();
     Number(cartinfo[1]);
-    total_price = (Number(cartinfo[1]) + total_price);
+    total_price = Math.trunc((Number(cartinfo[1]) + total_price));
     console.log(total_price);
     $("#total").html("Total $" + total_price + ".00");
-    $("#cart_container #total").html("Sub-total $" + total_price + ".00" + "<br>" + "Tax: $" + total_price*0.10 + ".00" + "<br>" + "Total $" + total_price*1.10 + ".00");
+    $("#cart_container #total").html("Sub-total $" + total_price + ".00" + "<br>" + "Tax: $" + Math.trunc(total_price*0.10) + ".00" + "<br>" + "Total $" + Math.trunc(total_price*1.10) + ".00");
 
     $(this).addClass("is-active");
     $(this).text("Added to Cart!");
@@ -108,28 +108,38 @@ $(document).ready(function() {
       $("#topdiv").hide();
       $("#payment").hide();
       $("#creditinput").hide();
-      $("#credit_container").html("<h5>Your order has been placed!</h5>")
+      $("#credit_container").prepend("<h5>Your order has been placed!</h5>")
+      $("#receipt_button").removeClass("active");
+      $("#receipt_button").show();
     }, 3000);
-
+      $("#receipt_button").on("click",function(){
+        $("#credit_container").hide();
+        $("#cart_container").prepend("Receipt");
+      })
   });
+
 
   $("#cashicon").on("click", function(){
     $("#credit_container").show(500);
     $("#topdiv").hide();
     $("#payment").hide();
     $("#creditinput").hide();
-    $("#total_cash").text("Your total is : $" + total_price*1.10 + ".00");
+    $("#total_cash").text("Your total is : $" + Math.trunc(total_price*1.10) + ".00");
   });
 
   $("#submit_cash").on("click", function(){
     var cash_val = $("#cashamount").val();
-    console.log(cash_val - total_price*1.10);
+    $("#credit_container").append("Your payment is $" + cash_val + ". Your change will be $" + Math.trunc((cash_val - total_price*1.10)) + ".");
+
   });
 
 
   $("#cardicon").on("click", function(){
     $("#credit_container").show(500);
     $("#cashamount").hide();
+    $("#cash_text").hide();
+    $("#total_cash").hide();
+    $("#submit_cash").hide();
   });
   //--------------------------------
 });
