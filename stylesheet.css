@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Contrail+One|Permanent+Marker');
 
-
 #title {
   width: 400px;
   height: 70px;
@@ -8,7 +7,7 @@
   font-size: 40px;
   font-weight: bolder;
   background-color: grey;
-  color:#165d5d;
+  color:black;
   margin-bottom: 0;
   position: relative;
   display: flex;
@@ -21,7 +20,7 @@
 
 #container {
   width: 400px;
-  height: auto;
+  height: 600px;
   background-color: black;
   margin-top: 0;
   padding: 20px 0 60px 0;
@@ -46,20 +45,80 @@
 
 #cart_container {
   width: 400px;
-  height: 700px;
+  height: 620px;
   background-color: black;
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-top: 0;
-  padding: 20px 0 60px 0;
+  padding: 50px 0 60px 0;
   position: absolute;
   top: 78px;
-  color: white;
   left: 50%;
   transform: translateX(-50%);
+  font-size: 20px;
+  font-family: 'Contrail One', cursive;
+}
 
+#cart_container div {
+  color: white;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#cart_container p {
+  display: inline-block;
+  position: absolute;
+  width: 260px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+#cart_container #total {
+  color: black;
+  position: absolute;
+  bottom: 150px;
+  height: 100px;
+  font-size: 25px;
+}
+
+#cart_container img {
+  position: absolute;
+  width: 100px;
+}
+
+#cart_container #cardicon {
+  bottom: 20px;
+  right: 50px;
+}
+
+#cart_container #cashicon {
+  bottom: 20px;
+  left: 50px;
+}
+
+#cart_info {
+  height:25px;
+  background-color: #4ae4e4;
+  text-align: center;
+  color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#cart_container img {
+  position: absolute;
+  width: 100px;
+}
+
+#cart_container #cardicon {
+  bottom: 20px;
+  right: 50px;
+}
+
+#cart_container #cashicon {
+  bottom: 20px;
+  left: 50px;
 }
 
 .item {
@@ -101,7 +160,6 @@
   -webkit-box-shadow: 0px 0px 22px -1px rgba(0,0,0,1);
   -moz-box-shadow: 0px 0px 22px -1px rgba(0,0,0,1);
   box-shadow: 0px 0px 22px -1px rgba(0,0,0,1);
-
 }
 
 .item p {
@@ -137,9 +195,8 @@
 #title img {
   position: absolute;
   right: 0;
-  top: 10px;
+  top: 0;
   padding: 10px;
-  width:35px
 }
 
 .item h4 {
@@ -176,79 +233,46 @@
 }
 
 #total {
-  width: 340px;
+  width: 100%;
   height: 40px;
-  background-color: #165d5d;
+  background-color: #4ae4e4;
   margin-top: 20px;
+  padding-top: 10px;
   font-family: 'Contrail One', cursive;
-  border-radius:5px;
-  font-size:22px;
-  color:#fff;
-
+  text-align: center;
+  font-size: 30px;
 }
 
-#i1 {
-  background-image: url("Images/hat1.jpg");
-}
+#i1{background-image:url("Images/hat1.jpg");}
+#i2{background-image:url("Images/hat2.jpg");}
+#i3{background-image:url("Images/hat3.jpg");}
+#i4{background-image:url("Images/hat4.jpg");}
+#i5{background-image:url("Images/hat5.jpg");}
+#i6{background-image:url("Images/hat6.jpg");}
+#i7{background-image:url("Images/hat7.jpg");}
+#i8{background-image:url("Images/hat8.jpg");}
+#i9{background-image:url("Images/hat9.jpg");}
+#i10{background-image:url("Images/hat10.jpg");}
+#i11{background-image:url("Images/hat11.jpg");}
+#i12{background-image:url("Images/hat12.jpg");}
 
-#i2 {
-  background-image:url("Images/hat2.jpg")
-}
-
-#i3{
-  background-image:url("Images/hat3.jpg")
-}
-
-#i4{
-  background-image:url("Images/hat4.jpg")
-}
-
-#i5{
-  background-image:url("Images/hat5.jpg")
-}
-
-#i6{
-  background-image:url("Images/hat6.jpg")
-}
-
-#i7{
-  background-image:url("Images/hat7.jpg")
-}
-
-#i8{
-  background-image:url("Images/hat8.jpg")
-}
-#i9{
-  background-image:url("Images/hat9.jpg")
-}
-#i10{
-  background-image:url("Images/hat10.jpg")
-}
-#i11{
-  background-image:url("Images/hat11.jpg")
-}
-#i12{
-  background-image:url("Images/hat12.jpg")
-}
-
-/*CreditCard PopUp*/
 
 #credit_container{
   background-color:#fff;
+  min-width: 350px;
   width:24%;
-  min-width:265px;
   margin:0 auto;
   border-radius:5px;
   position:absolute;
   left: 50%;
   transform: translateX(-50%);
   top:180px;
-/*   display:none; */
+  display: none;
 }
 
 #topdiv{
   background-color:#bfbfbf;
-  border-radius: 5px 5px 0px 0px; 
+  border-radius: 5px 5px 0px 0px;
   -webkit-box-shadow: -7px 26px 33px -31px rgba(0,0,0,0.54);
 -moz-box-shadow: -7px 26px 33px -31px rgba(0,0,0,0.54);
 box-shadow: -7px 26px 33px -31px rgba(0,0,0,0.54);
@@ -331,10 +355,3 @@ box-shadow: -7px 26px 33px -31px rgba(0,0,0,0.54);
   font-size:18px;
   color:#165d5d;
 }
-
-
-
-
-
-
-

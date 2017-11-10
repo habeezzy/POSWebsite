@@ -48,14 +48,19 @@
     <div id = "wrap12" class = "wrap">
       <div class  = "item" id = "i12"></div>
     </div>
-        <div id = "total">Total: </div>
+    <div id = "total">Total: </div>
   </div>
   <div id = "info_popup">
     <div id = "stuff"></div>
     <div id = "x_div"></div>
     <button class="popup-button">Add to Cart</button>
   </div>
-  <div id = "cart_container"></div>
+  <div id = "cart_container">
+    <p id = "cart_info"></p>
+    <div id = "total">Total: </div>
+    <img id = "cashicon" src = "Images/cash.png">
+    <img id = "cardicon" src = "Images/credit-card.png">
+  </div>
   <div id = "credit_container">
     <div id= "topdiv">
       <p>Payment Details</p>
@@ -66,8 +71,14 @@
       <img src="Images/AE.png" alt="American Express"/>
       <img src="Images/discover.png" alt="Discover"/>
     </div>
+      <!--cash inputs-->
+      <p id="cash_text">We'll see you at the store! Enter the amount of cash you'd like to pay to calculate your change.</p>
+      <p id = "total_cash"></p>
+      <input type = "text" id="cashamount" placeholder = "Example: 100">
+      <div id = "submit_cash">Calculate!</div>
     <div id="creditinput">
       <form id ="form">
+        <!--card inputs-->
         <label for="name">Name on card</label>
         <input  type="text" id="name"/>
         <label for="cardnumber">Card Number</label>
