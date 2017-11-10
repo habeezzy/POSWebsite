@@ -361,3 +361,93 @@ box-shadow: -7px 26px 33px -31px rgba(0,0,0,0.54);
   margin-left: 50%;
   transform: translateX(-50%);
 }
+
+
+@media screen and (min-width: 768px) {
+
+body {
+  background-color: black;
+}
+#title {
+  width: 100%;
+  max-width: 100%;
+
+}
+
+#container {
+  width: 100%;
+  height: ;
+  max-width: 1350px;
+
+}
+
+div .item {
+ width: 200px;
+ height: 200px;
+ 
+}
+
+.item p {
+  margin-top: 210px;
+}
+
+#cart_container {
+  max-width: 100%;
+  width: 100%;
+  margin-top: 30px;
+}
+p#cart_info  {
+  max-width: 100%;
+  width: 100%;
+}
+
+#cashicon {
+  margin-bottom: 135px;
+}
+
+#cardicon {
+  margin-bottom: 135px;
+}
+
+#total {
+  margin-bottom: 
+}
+
+#credit_container p {
+  font-family: 'Contrail One', cursive;
+  margin: 20px 20px 10px 20px;
+  text-align: center;
+
+}
+#cashamount {
+    margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+div#submit_cash {
+
+  background-color:#165d5d;
+  border:none;
+  font-family: 'Contrail One', cursive;
+  font-size:18px;
+  color:white;
+  padding:10px;
+  margin-bottom:10px;
+  width:90%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  margin-top: 10px;
+}
+
+#credit_container {
+  margin-top: 50px;
+}
+
+#cart_container {
+  color: white;
+  text-align: center;
+}
+
+
+}

@@ -129,7 +129,7 @@ $(document).ready(function() {
 
   $("#submit_cash").on("click", function(){
     var cash_val = $("#cashamount").val();
-    $("#credit_container").append("Your payment is $" + cash_val + ". Your change will be $" + Math.trunc((cash_val - total_price*1.10)) + ".");
+    $("#credit_container").html("<p>Your payment is $" + cash_val + ". Your change will be $" + Math.trunc((cash_val - total_price*1.10)) + ".</p>");
 
   });
 
