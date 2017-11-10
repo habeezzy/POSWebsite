@@ -53,9 +53,43 @@
   <div id = "info_popup">
     <div id = "stuff"></div>
     <div id = "x_div"></div>
-    <button class="popup-button">Add to Cart</button>  
+    <button class="popup-button">Add to Cart</button>
   </div>
   <div id = "cart_container"></div>
+  <div id = "credit_container">
+    <div id= "topdiv">
+      <p>Payment Details</p>
+    </div>
+    <div id ="payment">
+      <img src="Images/visa.png" alt="visa"/>
+      <img src="Images/mastercard.png" alt="Mastercard"/>
+      <img src="Images/AE.png" alt="American Express"/>
+      <img src="Images/discover.png" alt="Discover"/>
+    </div>
+    <div id="creditinput">
+      <form id ="form">
+        <label for="name">Name on card</label>
+        <input  type="text" id="name"/>
+        <label for="cardnumber">Card Number</label>
+        <input  type="text" id="cardnumber"/>
+        <div id ="datecode">
+          <div>
+            <label for="exdate">Expir. date</label>
+            <input  type="text" id="exdate"/>
+          </div>
+          <div>
+            <label for="code">Security code</label>
+            <input  type="text" id="code"/>
+          </div>
+        </div>
+        <label for="zip">ZIP/Postal code</label>
+        <input  type="text" id="zip"/>
+      </form>
+      <div id="orderbutton">
+        <button>Place Order</button>
+      </div>
+    </div>
+  </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="script.js"></script>
 </body>

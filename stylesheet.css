@@ -8,7 +8,7 @@
   font-size: 40px;
   font-weight: bolder;
   background-color: grey;
-  color:black;
+  color:#165d5d;
   margin-bottom: 0;
   position: relative;
   display: flex;
@@ -107,8 +107,6 @@
 .item p {
   color: #4ae4e4;
   margin-top: 103px;
-
-
 }
 
 #info_popup {
@@ -139,8 +137,9 @@
 #title img {
   position: absolute;
   right: 0;
-  top: 0;
+  top: 10px;
   padding: 10px;
+  width:35px
 }
 
 .item h4 {
@@ -179,9 +178,13 @@
 #total {
   width: 340px;
   height: 40px;
-  background-color: yellow;
+  background-color: #165d5d;
   margin-top: 20px;
   font-family: 'Contrail One', cursive;
+  border-radius:5px;
+  font-size:22px;
+  color:#fff;
+
 }
 
 #i1 {
@@ -227,3 +230,111 @@
 #i12{
   background-image:url("Images/hat12.jpg")
 }
+
+/*CreditCard PopUp*/
+
+#credit_container{
+  background-color:#fff;
+  width:24%;
+  min-width:265px;
+  margin:0 auto;
+  border-radius:5px;
+  position:absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top:180px;
+/*   display:none; */
+}
+
+#topdiv{
+  background-color:#bfbfbf;
+  border-radius: 5px 5px 0px 0px; 
+  -webkit-box-shadow: -7px 26px 33px -31px rgba(0,0,0,0.54);
+-moz-box-shadow: -7px 26px 33px -31px rgba(0,0,0,0.54);
+box-shadow: -7px 26px 33px -31px rgba(0,0,0,0.54);
+}
+
+#topdiv p{
+  margin:0;
+  text-align:center;
+  padding: 20px;
+  font-family: 'Contrail One', cursive;
+  font-size:22px;
+  color:#165d5d;
+}
+
+#payment{
+  display:flex;
+  justify-content:center;;
+  margin:10px 0 10px 0;
+}
+
+#payment img{
+  width:57px;
+  height:36px;
+  border:1px solid #bfbfbf;
+  border-radius:2px;
+  margin:10px 3px 10px 3px;
+}
+
+#form{
+  display:flex;
+  flex-direction:column;
+  width:90%;
+  margin:0 auto;
+}
+
+#form label{
+  font-family: 'Contrail One', cursive;
+  display:block;
+}
+
+#form input{
+  height:30px;
+  border-radius:2px;
+  border:1px solid #bfbfbf;
+  margin: 5px 0 15px 0;
+}
+
+#datecode{
+  display:flex;
+
+}
+
+#datecode input{
+  width:98%
+}
+
+#orderbutton{
+  text-align:center;
+}
+
+#credit_container button{
+  background-color:#165d5d;
+  border:none;
+  font-family: 'Contrail One', cursive;
+  font-size:18px;
+  color:white;
+  padding:10px;
+  margin-bottom:10px;
+  width:90%;
+}
+
+#credit_container .active{
+  background-color:#b4d2d2;
+  cursor:progress;
+}
+
+#credit_container h5{
+  text-align:center;
+  font-family: 'Contrail One', cursive;
+  font-size:18px;
+  color:#165d5d;
+}
+
+
+
+
+
+
+
