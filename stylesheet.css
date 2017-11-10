@@ -378,6 +378,17 @@ div#submit_cash {
   margin-top: 10px;
 }
 
+#credit_container p {
+  font-family: 'Contrail One', cursive;
+  margin: 20px 20px 10px 20px;
+  text-align: center;
+
+}
+#cashamount {
+    margin-left: 50%;
+  transform: translateX(-50%);
+}
+
 
 @media screen and (min-width: 768px) {
 
