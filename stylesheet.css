@@ -362,6 +362,22 @@ box-shadow: -7px 26px 33px -31px rgba(0,0,0,0.54);
   transform: translateX(-50%);
 }
 
+div#submit_cash {
+
+  background-color:#165d5d;
+  border:none;
+  font-family: 'Contrail One', cursive;
+  font-size:18px;
+  color:white;
+  padding:10px;
+  margin-bottom:10px;
+  width:90%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  margin-top: 10px;
+}
+
 
 @media screen and (min-width: 768px) {
 
@@ -384,7 +400,7 @@ body {
 div .item {
  width: 200px;
  height: 200px;
- 
+
 }
 
 .item p {
@@ -410,7 +426,7 @@ p#cart_info  {
 }
 
 #total {
-  margin-bottom: 
+  margin-bottom:
 }
 
 #credit_container p {
